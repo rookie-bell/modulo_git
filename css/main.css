@@ -1,3 +1,19 @@
 h1 {
-    color: green;
+    color: rgb(2, 0, 128);
+}
+
+h2 {
+    color: rgb(119, 128, 0);
+}
+
+#economy h2 {
+    color: gold;
+}
+
+.creation-date {
+    color: #ccc;
+}
+
+*{
+    color: red;
 }
