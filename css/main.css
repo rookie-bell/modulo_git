@@ -30,10 +30,10 @@ header li a {
 
 .container {
     width: 1366px;
-    margin: 0 auto 0 auto;
+    margin: 0 auto;
 }
 
-.aticles {
+.articles {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -48,9 +48,9 @@ header li a {
     width: 30%;
 }
 
-section [
+section {
     padding: 16px 0;
-]
+}
 
 section h2 
     .articles article {
