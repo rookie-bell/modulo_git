@@ -13,30 +13,90 @@ header nav {
 }
 
 header {
-    padding: 175px;
+    padding: 160px;
     background-image: url(imagens/imagem1.jpg);
     background-size: cover;
     background-position: center, center;
     color: rgb(62, 0, 143);
 }
 
-header {
-    padding-left: 420px;
+.social-links img {
+    height: 29px;
+}
+
+.social-links li {
+    display: inline;
+    font-size: 50px;
 }
 
 header nav li {
-    margin-left: 30px;
+    margin-left: 0 auto;
     font-size: 26px;;
     display: inline;
+    padding: 50px;
+    padding-left: 135px;
 }
 
 header nav li a {
     color: rgba(105, 15, 223, 0.76);
-    text-decoration: none;
+    text-decoration: solid;
+    font-weight: bold;
 }
 
 header h1 {
     margin-top: 250px;
-    margin-left: -50%;
-    position: static;
+    font-size: 60px;
+}
+
+.container {
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.about img {
+    height: 520px;
+    margin-top: 50px;
+}
+
+.about, li p {
+    color: azure;
+    background-color: rgb(8, 0, 22);
+    padding: 8px;
+    font-size: 32px;
+    text-align: center;
+    font-family: 'Source Code Pro', monospace;
+}
+
+section .about h3 {
+    margin-left: 43%;
+    font-size: 50px;
+    display: flex;
+}
+
+.curso img {
+    height: 520px;
+    margin: auto;
+    display: flex;
+}
+
+.curso {
+    background-color: rgb(8, 0, 22);
+}
+
+.curso h3 {
+    margin-left: 43%;
+    font-size: 50px;
+    font-family: 'Source Code Pro', monospace;
+    background-color: rgb(8, 0, 22);
+    color: azure;
+}
+
+.curso li {
+    color: azure;
+    background-color: rgb(8, 0, 22);
+    padding: 8px;
+    font-size: 32px;
+    text-align: center;
+    font-family: 'Source Code Pro', monospace;
 }
