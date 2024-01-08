@@ -15,13 +15,16 @@
 <body>
     <h1><strong>DOM</strong></h1>
     <p>Aqui vai o resultado</p>
-    <div>Clique em mim</div>
+    <div id="msg"></div> Clique em mim</div>
     <script>
         var corpo = window.document.body
         var p1 = window.document.getElementsByTagName('p')[0]
         window.document.write('Está Escrito assim: ' + p1.innerText)
         corpo.style.background = 'black'
         p1.style.color = 'blue'
+        var d = window.document.getElementById('msg')
+        d.style.background = 'green'
+        // d.innerText = 'Estou aguardando'
     </script>
 </body>
 </html>
