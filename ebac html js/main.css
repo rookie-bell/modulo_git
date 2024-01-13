@@ -1,0 +1,28 @@
+* {
+    margin: 25px;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Source Code Pro', monospace;
+    background-color: rgb(27, 26, 26);
+    color: rgb(171, 185, 255);
+}
+
+form input,
+form textarea,
+form button {
+    display: block;
+    width: 320px;
+    margin-bottom: 8px;
+    padding: 8px;
+}
+
+.btn-depositar,
+button {
+    background-color: #5c66eb;
+    color: #ecf0f1;
+    border: none;
+    cursor: pointer;
+}
