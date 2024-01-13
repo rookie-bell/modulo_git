@@ -26,3 +26,26 @@ button {
     border: none;
     cursor: pointer;
 }
+
+.success-message {
+    background-color: #5c66eb;
+    color: rgb(215, 221, 255);
+    padding: 16px;
+    display: none;
+}
+
+.error-message {
+    font-size: 12px;
+    padding: 8px;
+    background-color: red;
+    color: rgb(215, 221, 255);
+    margin-bottom: 8px;
+    display: none;
+    width: 320px;
+}
+
+input.error {
+    color: red;
+    border-color: red;
+    outline-color: red;
+}
