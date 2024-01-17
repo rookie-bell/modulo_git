@@ -6,7 +6,7 @@
 
 body {
     font-family: 'Source Code Pro', monospace;
-    background-color: rgb(53, 52, 52);
+    background-color: rgb(37, 37, 37);
     color: rgb(171, 185, 255);
 }
 
@@ -18,11 +18,30 @@ form, input {
     height: 50px;
 }
 
-button, .btn {
+button {
     display: block;
     width: 350px;
     background-color: rgb(26, 25, 25);
     color: white;
     height: 50px;
+}
+
+.success-message {
+    margin-bottom:;
+    background-color: rgb(20, 128, 6);
+    padding: 16px;
+    color: rgb(161, 255, 177);
+    width: 350px;
+    display: none;
+}
+
+.error-message {
+    font-size: 16px;
+    padding: 16px;
+    background-color: rgb(255, 0, 0);
+    color: #3b1919;
+    margin-bottom: 16px;
+    width: 350px;
+    display: none;
 }
 
