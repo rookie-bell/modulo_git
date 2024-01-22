@@ -1,0 +1,72 @@
+* {
+    border: none;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: lighter;
+}
+
+body {
+    background-color: #d8b5ff;
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    font-weight: bolder;
+    margin-bottom: 15px;
+    padding-right: 20px;
+    padding-top: 10px;
+    color: #653b8d;
+}
+
+.cabecalho img {
+    display: flex;
+    height: 30px;
+    margin:5px 10px 25px 20px;
+}
+
+main {
+    padding: 10px;
+    height: 80px;
+    margin: 0px 200px auto;
+}
+
+form {
+    margin: 10px;
+    border: 3px solid #9557f8;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 2px 2px #9557f8;
+    text-align: center;
+}
+
+input {
+    margin-bottom: 5px;
+    font-size: 16px;
+    border-radius: 10px;
+}
+
+input[type="text"] {
+    padding: 5px;
+    outline: none;
+    width: 10%;
+    display: flex;
+    align-items: center;
+    margin-left: 45%;
+}
+
+input[type="submit"],
+input[type="reset"] {
+    display: flex;
+    align-items: center;
+    padding: 10px 29px;
+    margin-top: 2px;
+    margin-left: 45%;
+    background-color: rgb(181, 141, 255);
+    width: 10%;
+    font-weight: bolder;
+}

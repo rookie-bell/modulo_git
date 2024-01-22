@@ -56,7 +56,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(182, 167, 240);
+    background-color: rgb(144, 119, 245);
     width: 100%;
     height: 100vh;
 }
@@ -66,10 +66,71 @@ body {
     color: #fff;
     padding: 10px;
     cursor: pointer;
-    border-radius: 10px 10px 0px 0px;
+    border-radius: 10px;
     margin-right: 2px;
 }
 
 .abaSelecionada {
     background-color: rgb(182, 167, 240) !important;
 }
+
+.if_principal {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+/* novo contato */
+
+.btn_geral {
+    background-color: rgb(134, 108, 238);
+    color: #fff;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+#novo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.elementosForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin-top: 30px;
+}
+
+.elementosForm input {
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #ecc3ff;
+}
+
+.botoesForm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+#name_ {
+    margin-bottom: 10px;
+}
+
+#tel_ {
+    margin-bottom: 10px;
+}
+
+#email_ {
+
+}
+
+/* contatos salvos */
+
