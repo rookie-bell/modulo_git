@@ -31,16 +31,15 @@ body {
 
 main {
     padding: 10px;
-    height: 80px;
-    margin: 0px 200px auto;
+    height: 80vh;
 }
 
 form {
     margin: 10px;
-    border: 3px solid #9557f8;
+    border: 1px solid #b985fd;
     border-radius: 10px;
     padding: 20px;
-    box-shadow: 2px 2px #9557f8;
+    box-shadow: 1px 1px rgb(151, 60, 255);
     text-align: center;
 }
 
@@ -53,20 +52,13 @@ input {
 input[type="text"] {
     padding: 5px;
     outline: none;
-    width: 10%;
-    display: flex;
-    align-items: center;
-    margin-left: 45%;
+    width: 90px;
 }
 
 input[type="submit"],
 input[type="reset"] {
-    display: flex;
-    align-items: center;
-    padding: 10px 29px;
-    margin-top: 2px;
-    margin-left: 45%;
-    background-color: rgb(181, 141, 255);
-    width: 10%;
-    font-weight: bolder;
+    padding: 5px 10px;
+    margin-bottom: 5px;
+    background-color: #cd98ff;
+    width: 70px;
 }
