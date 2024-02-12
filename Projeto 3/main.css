@@ -1,0 +1,40 @@
+* {border: none;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+}
+
+body {
+    background-color: rgb(202, 210, 218);
+}
+
+.cabecalho {
+    margin: 50px;
+    display: flex;
+    max-width: 960px;
+}
+
+header img {
+    height: 38px;
+    padding-right: 8px;
+}
+
+form {
+    display:grid;
+    height: 80px;
+    max-width: 20px;
+    margin-left: 120px;
+}
+
+form input {
+    background-color:rgb(178, 197, 216);
+    border-radius: 5px;
+}
+
+form button {
+    background-color: rgba(0, 110, 255, 0.616);
+    border-radius: 5px;
+    cursor: pointer;
+}
