@@ -4,6 +4,7 @@
     box-sizing: border-box;
     font-family: 'Ubuntu', sans-serif;
     font-weight: bold;
+    color: rgba(19, 18, 18, 0.801);
 }
 
 body {
@@ -23,7 +24,7 @@ header img {
 
 form {
     display:grid;
-    height: 80px;
+    height: 90px;
     max-width: 20px;
     margin-left: 120px;
 }
@@ -31,10 +32,18 @@ form {
 form input {
     background-color:rgb(178, 197, 216);
     border-radius: 5px;
+    margin-top: 3px;
 }
 
 form button {
     background-color: rgba(0, 110, 255, 0.616);
     border-radius: 5px;
     cursor: pointer;
+    margin-top: 3px;
+}
+
+.contatos {
+    margin: 50px;
+    display: flex;
+    max-width: 960px;
 }
