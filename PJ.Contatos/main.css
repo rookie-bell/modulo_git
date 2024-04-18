@@ -1,0 +1,76 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+div.modal {
+    opacity: 0;
+    visibility: hidden;
+    position: fixed;
+}
+
+div.procurar {
+    border: 1px solid #D4D4D4;
+    border-radius: 5px;
+    display: flex;
+    width: 300px;
+    padding:  1em;
+    margin: 0 auto;
+}
+
+div.procurar > input {
+    flex-grow: 1;
+}
+
+button.bt-flutuante {
+    position: fixed;
+    right: 1em;
+    bottom: 1em;
+    border-radius: 50%;
+    width: 3em;
+    height: 3em;
+    border: 1px solid #D4D4D4;
+}
+
+main > div.pessoa {
+    border: 1px solid #D4D4D4;
+    border-radius: 6px;
+    margin: .5em;
+    padding: .5em;
+    background: #FDFDFD;
+    cursor: pointer;
+    position: relative;
+    transition: 1s;
+}
+
+main > div.pessoa:hover {
+    background: #dbd0fa;
+}
+
+main > div.pessoa div span:first-of-type {
+    font-weight: bold;
+}
+
+main > div.pessoa div.acoes {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: green;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s;
+    transform: translateX(-10px);
+}
+
+main > div.pessoa:hover div.acoes {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0px);
+}
+
+main > div.pessoa div.acoes button {
+    flex-grow: 1;
+}

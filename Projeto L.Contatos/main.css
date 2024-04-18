@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    margin: 16px;
+    padding-left: 20px;
+    background-color: rgb(228, 229, 245);
+}
+
+form {
+    margin-top: 20px;
+}
+
+form input,
+button {
+    padding: 10px;
+    display: flex;
+    margin-top: 5px;
+}
+
+form button {
+    background-color: rgb(196, 217, 248);
+}
+
+table th {
+    padding-top: 20px;
+    justify-content: center;
+}
+
