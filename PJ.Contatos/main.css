@@ -1,25 +1,98 @@
+* {
+    outline: none;
+    font-family: 'Roboto', sans-serif;
+    color: #6621b6;
+}
+
 body {
     margin: 0;
     padding: 0;
 }
 
+button {
+    cursor: pointer;
+}
+
 div.modal {
     opacity: 0;
     visibility: hidden;
+    display: flex;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
     position: fixed;
+    z-index: 20;
+    background: #000000BB;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(10px);
+    transition: .3s;
+}
+
+div.modal.open {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0px);
+}
+
+div.modal form {
+    border: 1px solid #D4D4D4;
+    background: #FFFFFF;
+    padding: 1em;
+    border-radius: 5px;
+    transform: translateY(30px);
+    transition: .5s;
+}
+
+div.modal.open form {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0px);
+}
+
+div.modal form > div {
+    margin: .5em 0 1em 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div.modal form > div label {
+    display: block;
+    width: 100%;
+}
+
+div.modal form > div input {
+    flex-grow: 1;
+}
+
+div.modal form > div:last-of-type {
+    justify-content: flex-end;
 }
 
 div.procurar {
-    border: 1px solid #D4D4D4;
-    border-radius: 5px;
+    border-bottom: 1px solid #D4D4D4;
+    border-radius: 1em;
+    background: #FDFDFD;
     display: flex;
     width: 300px;
     padding:  1em;
     margin: 0 auto;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    right: 77%;
+    box-shadow: 2px 2px 2px 2px #00000030;
 }
 
 div.procurar > input {
     flex-grow: 1;
+    padding: 1em;
+    border-radius: 5px 0 0 5px;
+    border: 1px solid #D4D4D4;
+    border-right: 0 none;
+    font-weight: 300;
 }
 
 button.bt-flutuante {
@@ -30,25 +103,36 @@ button.bt-flutuante {
     width: 3em;
     height: 3em;
     border: 1px solid #D4D4D4;
+    z-index: 10;
 }
 
 main > div.pessoa {
-    border: 1px solid #D4D4D4;
-    border-radius: 6px;
+    /* border: 1px solid #D4D4D4; */
+    border-radius: 1em;
     margin: .5em;
     padding: .5em;
-    background: #FDFDFD;
-    cursor: pointer;
+    background: #dbd0fa44;
     position: relative;
     transition: 1s;
+    width: 480px;
+}
+
+main {
+    padding: 5em 0 5em 0;
 }
 
 main > div.pessoa:hover {
     background: #dbd0fa;
 }
 
+main > div.pessoa div {
+    padding: .25em;
+}
+
 main > div.pessoa div span:first-of-type {
     font-weight: bold;
+    display: inline-block;
+    width: 5em;
 }
 
 main > div.pessoa div.acoes {
@@ -56,13 +140,13 @@ main > div.pessoa div.acoes {
     right: 0;
     top: 0;
     bottom: 0;
-    background: green;
     display: flex;
     flex-direction: column;
     opacity: 0;
     visibility: hidden;
     transition: .3s;
     transform: translateX(-10px);
+    padding: .5em;
 }
 
 main > div.pessoa:hover div.acoes {
@@ -73,4 +157,7 @@ main > div.pessoa:hover div.acoes {
 
 main > div.pessoa div.acoes button {
     flex-grow: 1;
+    border-radius: .5em;
+    background-color: #e6d0ff;
+    color: #6621b6;
 }
