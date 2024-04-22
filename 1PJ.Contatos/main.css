@@ -1,7 +1,7 @@
 * {
     outline: none;
     font-family: 'Roboto', sans-serif;
-    color: #6621b6;
+    color: #1c045f;
 }
 
 body {
@@ -43,6 +43,13 @@ div.modal form {
     border-radius: 5px;
     transform: translateY(30px);
     transition: .5s;
+    min-width: 500px;
+}
+
+div.modal form button.bt-close {
+    position: absolute;
+    right: .5em;
+    top: .5em;
 }
 
 div.modal.open form {
@@ -54,7 +61,12 @@ div.modal.open form {
 div.modal form > div {
     margin: .5em 0 1em 0;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+div.modal form > div > div {
+    display: flex;
+    padding: 0.25em 0;
 }
 
 div.modal form > div label {
@@ -64,6 +76,14 @@ div.modal form > div label {
 
 div.modal form > div input {
     flex-grow: 1;
+    border: 1px solid #D4D4D4;
+    padding: 1em;
+    font-weight: 300;
+}
+
+div.modal form > div > div > button {
+    border: 1px solid #D4D4D4;
+    border-left: 0 none;
 }
 
 div.modal form > div:last-of-type {
@@ -100,10 +120,15 @@ button.bt-flutuante {
     right: 1em;
     bottom: 1em;
     border-radius: 50%;
-    width: 3em;
-    height: 3em;
+    width: 5em;
+    height: 5em;
     border: 1px solid #D4D4D4;
     z-index: 10;
+    background-color: #dbd0fa;
+}
+
+main {
+    padding: 5em 0 5em 0;
 }
 
 main > div.pessoa {
@@ -117,8 +142,14 @@ main > div.pessoa {
     width: 480px;
 }
 
-main {
-    padding: 5em 0 5em 0;
+main > div.pessoa div.varios-valores div {
+    display: flex;
+    flex-direction: column;
+    padding-left: 1em;
+}
+
+main > div.pessoa div.varios-valores div span {
+    padding: 0 0 0.25em;
 }
 
 main > div.pessoa:hover {
@@ -129,10 +160,9 @@ main > div.pessoa div {
     padding: .25em;
 }
 
-main > div.pessoa div span:first-of-type {
+main > div.pessoa > div > span:first-of-type {
     font-weight: bold;
     display: inline-block;
-    width: 5em;
 }
 
 main > div.pessoa div.acoes {
@@ -156,8 +186,10 @@ main > div.pessoa:hover div.acoes {
 }
 
 main > div.pessoa div.acoes button {
-    flex-grow: 1;
+    padding: 0.25em;
+    border: 1px solid #968dad;
+    border-top: 0 none;
     border-radius: .5em;
-    background-color: #e6d0ff;
+    background-color: #ffffff;
     color: #6621b6;
 }
