@@ -1,6 +1,6 @@
 $(document).ready(function() {
     $('#carousel-imagens').slick({
-        autoplay:true
+        autoplay: true
     });
 
     $('.menu-hamburguer').click(function() {
@@ -34,7 +34,7 @@ $(document).ready(function() {
             submitHandler: function(form) {
                 console.log(form)
             },
-            invalidHandler: function(evento, validador) {
+            invalidHandler: function(form, validador) {
                 let camposIncorretos = validador.numberOfInvalids();
                 if (camposIncorretos) {
                     alert(`Existem ${camposIncorretos} campos incorretos`)
