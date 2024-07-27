@@ -1,0 +1,81 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    Font-family: "Roboto", sans-serif;
+}
+
+body {
+    background-color: #fff;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header {
+    padding: 12px 0;
+    background-color: rgb(0, 110, 255);
+    color: #fff;
+    font-size: 14px;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    font-style: italic;
+}
+
+section img {
+    max-width: 380px;
+    margin-right: 32px;
+}
+
+header .container,
+section .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav li {
+    display: inline;
+    margin-left: 16px;
+    font-weight: bold;
+    font-style: normal;
+}
+
+header nav li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+section .container {
+    align-items: flex-start;
+}
+
+section {
+    padding: 24px 0;
+}
+
+#sobre-a-loja h2 {
+    padding-bottom: 6px;
+    margin-bottom: 30px;
+    border-bottom: 2px solid rgba(0, 110, 255);
+    color: rgba(0, 110, 255);
+    font-style: italic;
+}
+
+section p {
+    margin-bottom: 8px;
+}
+
+.container .produtos {
+    display: inline;
+    justify-content: center;
+    align-items: center;
+}
+
+#produtos,
+.produtos .descricao {
+    display: flex;
+}
