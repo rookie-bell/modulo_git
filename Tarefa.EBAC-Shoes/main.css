@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    background-color: #f3faff;
+}
+
+header {
+    padding: 16px 0;
+    background-color: #0099ff;
+    color: #f3faff;
+    font-weight: 700;
+    font-style: italic;
+}
+
+header nav li {
+    display: inline;
+    margin-left: 16px;
+    font-size: 20px;
+}
+
+header nav li a {
+    color: #f3faff;
+    text-decoration: none;
+    font-weight: 400 normal;
+    font-style: normal;
+    font-size: 16px;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header .container,
+section .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.fachada-loja,
+.lis {
+    max-width: 480px;
+    margin-right: 32px;
+}
+
+.fonte-estilo {
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+    color: #0099ff;
+    font-weight: 700;
+    font-style: italic;
+    border-bottom: solid 2px #0099ff;
+}
+
+section .container {
+    align-items: flex-start;
+}
+
+section {
+    padding: 24px 0;
+}
+
+section h2 {
+    margin-bottom: 16px;
+}
+
+section p {
+    margin-bottom: 8px;
+}
+
+section .produtos {
+    margin-top: 30px;
+    display: flex;
+    list-style: none;
+}
+
+.nome-produto {
+    padding: 10px 0;
+    display: flex;
+}
