@@ -33,6 +33,11 @@ header nav li a {
     margin: 0 auto;
 }
 
+.produtos img {
+    width: 250px;
+    height: 250px;
+}
+
 header .container,
 section .container {
     display: flex;
@@ -90,10 +95,6 @@ section p {
     font-weight: normal;
 }
 
-.tenis-infantil {
-    height: 231px;
-}
-
 .produtos img {
     margin-right: 0;
     max-width: 250px;
@@ -129,6 +130,10 @@ section .produtos button {
         max-width: 640px;
         width: 90%;
     }
+
+    .container .fachada-loja {
+        padding-bottom: 20px;
+    }
     
     section .container {
     display: block;
@@ -151,7 +156,30 @@ section .produtos button {
 }
 
 @media screen and (min-width: 641px) and (max-width: 1023px) {
-    body {
-        background-color: red;
+    .container,
+    .produtos {
+        max-width: 90%;
+    }
+
+    section .container {
+        display: block;
+        }
+
+    .fachada-loja {
+        max-width: 762px;
+        padding-bottom: 28px;
+    }
+
+    .produtos ul {
+        min-width: 820px;
+        max-width: 1180px;
+        align-items: center;
+        justify-content: center;
+        display: grid;
+        grid-template-columns:repeat(2, 39%);
+    }
+
+    .produtos li {
+        padding-bottom: 20px;
     }
 }
