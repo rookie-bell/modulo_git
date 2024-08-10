@@ -1,0 +1,20 @@
+body {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: bold;
+}
+
+.navbar {
+    background-color: #6c41e1d0;
+}
+
+.nav .nav-link.active {
+    background-color: #fff;
+    color: #6c41e1d0;
+}
+
+.nav .nav-link,
+.navbar-brand,
+.navbar-brand:hover {
+    color: #fff;
+}
