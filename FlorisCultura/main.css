@@ -1,0 +1,63 @@
+body {
+    font-family: "Cabin", sans-serif;
+    font-weight: 400;
+    font-style: bold;
+}
+
+.navbar {
+    background-color:#6c41e1;
+}
+
+#cabecalho .nav .nav-link.active {
+    background-color: #fff;
+    color: #6c41e1;
+}
+
+#cabecalho .nav .nav-link,
+.navbar-brand,
+.navbar-brand:hover,
+.nav-produtos .nav-link.active:hover {
+    color: #fff;
+}
+
+.navbar-toggler {
+    background-color: #e4daff;
+}
+
+.section-title {
+    font-family: "Cabin", sans-serif;
+}
+
+#sobre-a-floris,
+#produtos {
+    background-color: #e4daff;;
+}
+
+.text-colored {
+    color: #6c41e1;
+}
+
+.nav-produtos .nav-link.active, 
+#fale-conosco button {
+    background-color: #6c41e1;
+    color: #fff;
+}
+
+.nav-produtos .nav-link:hover {
+    color: #6c41e1;
+}
+
+.social-links li {
+    list-style: none;
+    display: inline;
+}
+
+.social-links a {
+    text-decoration: none;
+}
+
+@media (max-width: 767px) {
+    .carousel-item img {
+        height: 280px;
+    }
+}
